@@ -10,7 +10,7 @@
 
     
     {% for work in data['works'] %}
-            <h2>{{work['title']}}, {{work['authors']['name']}} </h2>
+            <h2>{{work['title']}}, {{work['authors'][0]['name']}} </h2>
             
             
     {% endfor %}
