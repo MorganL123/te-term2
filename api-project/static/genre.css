@@ -1,14 +1,50 @@
-.book {
+html, body {
+    height: 100%;
+    margin: 0px;
+}
+
+.library-pic {
+    /* The image used */
+    background-image: url("https://cdn.wallpapersafari.com/0/80/KIiEkW.jpg");
+  
+    /* Full height */
+    height: 150%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .book {
 	padding: 15px 0 0 0;
-	margin: auto;
-    background-color: pink;
+	margin:0px;
+    background-color: rosybrown;
     color: white;
     
     height: 150px;
     font-size: 13px;
-    width: calc(100% * (1/4) - 10px - 1px);
-    
-    
+    width: calc(100% * (1/4) - 10px - 2px );
+    text-align: center;    
+}
+
+.recommended {
+    text-align: center;
+    color: lightgray;
+    letter-spacing: 5px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    background-color: rosybrown;
+    margin-bottom: 10px;
+  }
+
+.recommended h1 {
+    margin: 0px;
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .container { 
@@ -18,11 +54,28 @@
     justify-content: center;
     column-gap: 20px;
     gap: 10px 20px;
-
-
+    justify-content: space-around;
+    width: 75%;
 }
 
 
+a:link { text-decoration: none; }
 
-  
+a:visited {
+    color: turquoise;
+  }
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
   
