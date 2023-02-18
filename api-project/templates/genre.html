@@ -2,18 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Inspiration</title>
+    <link rel="stylesheet" href="/static/genre.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <div class="container">
+
+        {% for work in data['works'] %}
+        <div class="book">
+            <h2>{{work['title']}}</h2>
+            <h2>{{work['authors'][0]['name']}}</h2>
+        </div>            
+        {% endfor %}
+
+
+        
+    </div> 
     
-    {% for work in data['works'] %}
-            <h2>{{work['title']}}, {{work['authors'][0]['name']}} </h2>
-            
-            
-    {% endfor %}
+    
    
 
 </h2>

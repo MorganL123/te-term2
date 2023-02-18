@@ -1,0 +1,58 @@
+html, body {
+  height: 100%;
+}
+
+.library {
+    color: lightgray;
+    letter-spacing: 5px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    background-color: rosybrown;
+  }
+
+  .all {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  }
+  
+  .library-pic {
+    /* The image used */
+    background-image: url("https://cdn.wallpapersafari.com/0/80/KIiEkW.jpg");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .typed-out {
+    overflow: hidden;
+    border-right: .15em solid ;
+    white-space: nowrap;
+    animation: 
+    typing 2s steps(20, end) forwards;
+    font-size: 1.6rem;
+    width: 0;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+.genre {
+  left: 80%;
+  text-align: center;
+  
+  
+}
+
+
+
+
+
