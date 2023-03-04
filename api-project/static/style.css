@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html, body {
   height: 100%;
   margin: 0px;
@@ -84,3 +85,9 @@ input {
 
 
 
+=======
+.library {
+    justify-content: center;
+    color: purple;
+  }
+>>>>>>> 85281c74b70f4cf3bf8ac2e8855026dc8eeebd12
