@@ -9,10 +9,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
 </head>
   <body>
-      <input name = "name">
-      <input age = "age"> 
-      <input age = "height">
-      <input group = "group">
-      <input type="submit" value="submit"/>
+    <form action="/success" method="post">
+        <input type = "text" name = "name" placeholder = "Name">
+        <input type = "text" name = "age" placeholder = "Name">
+        <input type = "text" name = "height" placeholder = "Name">
+        <input type = "text" name = "group" placeholder = "Name">
+        <input type="submit" value="submit"/>
+
     <form>
+    
+    <h1> Engineers Table </h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Height</th>
+            <th>Group</th>
+        </tr>
+        {% for engineer in engineers %}
+            <tr>
+                <td>{{engineer["name"]}}</td>
+                <td>{{engineer["age"]}}</td>
+                <td>{{engineer["height"]}}</td>
+                <td>{{engineer["group"]}}</td>
+            </tr>
+        {% endfor %}
+        </table>
+    </body>
+</html>
+
+   
+
+    
         
